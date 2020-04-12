@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  section(id="chat_panel")
+  form(id="chat_form")
+    input(type="text", name="msg")
+    button(type="submit")
+        | Send
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js", integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=", crossorigin="anonymous")
+    script(src="/javascripts/chat.js", async, defer)
